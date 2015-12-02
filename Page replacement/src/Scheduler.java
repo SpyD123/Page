@@ -8,7 +8,7 @@ public class Scheduler {
 		while(choice!=4)
 		{
 			System.out.println("Enter choice :");
-			System.out.println("1)FIFO\n2)LRU\n3)OPT\n4)QUIT");
+			System.out.println("1)FIFO\n2)LRU\n3)OPT\n4)SecondChance\n5)QUIT");
 			choice =u.nextInt();
 			if(choice==1)
 			{
@@ -27,6 +27,12 @@ public class Scheduler {
 				opt sc=new opt();
 				sc.input();
 				sc.algo();
+			}
+			if(choice==4)
+			{
+				sec sch=new sec();
+				sch.input();
+				sch.algo();
 			}
 		}
 	}
